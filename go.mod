@@ -1,4 +1,4 @@
-module go-bank-scraper
+module go-bank-scrapper
 
 go 1.18
 
