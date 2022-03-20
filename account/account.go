@@ -1,6 +1,9 @@
 package account
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 // Account struct
 type Account struct {
@@ -44,4 +47,8 @@ func (account Account) Owner() string {
 // Balance of the account
 func (account Account) Balance() int {
 	return account.balance
+}
+
+func (account Account) String() string {
+	return fmt.Sprint(account.owner, " has: ", account.balance)
 }
